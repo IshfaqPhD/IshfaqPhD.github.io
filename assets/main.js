@@ -215,7 +215,7 @@ const publications = [
   // ==================== 2016 ====================
   {
     "title": "KU Database of Handwritten Arabic Words",
-    "venue": "Research output listed on Strikingly · Full venue needs verification",
+    "venue": "International Journal of Engineering and Future Technology",
     "year": "2016",
     "type": "journal"
   },
