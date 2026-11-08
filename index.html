@@ -1,102 +1,757 @@
+
 <!doctype html>
 <html lang="en">
 <head>
-  <meta name="google-site-verification" content="D8PGG6OP8G_cMM11N0IG1YtlzCCNJfLKhmNZfd9alyU" />
-  
+  <meta name="google-site-verification"
+        content="D8PGG6OP8G_cMM11N0IG1YtlzCCNJfLKhmNZfd9alyU" />
+
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#091a2e" />
-  <meta name="description" content="Ishfaq Bashir Sofi, PhD — AI and cybersecurity researcher specializing in generative AI, intrusion detection, class imbalance, and efficient deep learning." />
+  <meta name="description"
+        content="Ishfaq Bashir Sofi, PhD — AI and cybersecurity researcher specializing in generative AI, intrusion detection, class imbalance, and efficient deep learning." />
+
   <title>Ishfaq Bashir Sofi, PhD | AI & Cybersecurity Research</title>
+
   <link rel="stylesheet" href="assets/styles.css" />
   <script defer src="assets/main.js"></script>
+
+  <style>
+    /* Research Photo Gallery */
+    .research-gallery {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .research-gallery figure {
+      margin: 0;
+      overflow: hidden;
+      border-radius: 16px;
+      background: #10243b;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .research-gallery a {
+      display: block;
+      overflow: hidden;
+    }
+
+    .research-gallery img {
+      display: block;
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .research-gallery figure:hover img {
+      transform: scale(1.06);
+    }
+
+    .research-gallery figcaption {
+      padding: 14px 16px;
+      color: #d9e5ee;
+      font-size: 14px;
+    }
+
+    @media (max-width: 900px) {
+      .research-gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 600px) {
+      .research-gallery {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
+
 <body>
   <a class="skip" href="#main">Skip to content</a>
+
+  <!-- HEADER -->
   <header class="site-header" id="top">
     <div class="shell nav-wrap">
-      <a class="brand" href="#top" aria-label="Ishfaq Bashir Sofi, homepage">
+
+      <a class="brand" href="#top"
+         aria-label="Ishfaq Bashir Sofi, homepage">
         <img
           src="assets/sofi-logo.png"
-          alt="SOFI GenAI and Security Lab"
+          alt="Research portfolio logo"
           class="site-logo"
         />
-        <span>.</span></span><span class="brand-name">ISHFAQ BASHIR SOFI<small>RESEARCH PORTFOLIO</small></span></a>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+        <span class="brand-name">
+          ISHFAQ BASHIR SOFI
+          <small>RESEARCH PORTFOLIO</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle"
+              type="button"
+              aria-expanded="false"
+              aria-controls="site-nav"
+              aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
       <nav id="site-nav" class="nav" aria-label="Main navigation">
-        <a href="#about">About</a><a href="#research">Research</a><a href="#education">Education</a><a href="#projects">Projects</a><a href="#publications">Publications</a><a href="#gallery">Gallery</a><a href="#experience">Experience</a><a href="#recognition">Recognition</a><a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#publications">Publications</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#experience">Experience</a>
+        <a href="#recognition">Recognition</a>
+        <a href="#contact">Contact</a>
       </nav>
+
     </div>
   </header>
+
   <main id="main">
+
+    <!-- HERO -->
     <section class="hero" aria-labelledby="hero-heading">
-      <div class="hero-grid" aria-hidden="true"></div><div class="hero-orb" aria-hidden="true"></div>
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-orb" aria-hidden="true"></div>
+
       <div class="shell hero-layout">
         <div class="hero-copy reveal">
-          <div class="eyebrow"></span> RESEARCHER · AI & CYBERSECURITY</div>
-          <h1 id="hero-heading">Building <em>Intelligent</em><br />and Resilient<br />Digital Systems<span class="period">.</span></h1>
-          <p class="hero-lead"><strong>Ishfaq Bashir Sofi, PhD</strong> — A researcher developing robust, scalable, and efficient AI-driven approaches to cybersecurity, with a focus on generative learning and network intrusion detection.</p>
-          <div class="hero-actions"><a class="button primary" href="#research">Explore my research <span aria-hidden="true">↗</span></a><a class="button secondary" href="#publications">View publications <span aria-hidden="true">→</span></a></div>
-          <div class="hero-foot"><span class="pulse"></span> Open to research collaboration <span class="foot-separator">/</span> Montréal, Canada</div>
+
+          <div class="eyebrow">
+            RESEARCHER · AI & CYBERSECURITY
+          </div>
+
+          <h1 id="hero-heading">
+            Building <em>Intelligent</em><br />
+            and Resilient<br />
+            Digital Systems<span class="period">.</span>
+          </h1>
+
+          <p class="hero-lead">
+            <strong>Ishfaq Bashir Sofi, PhD</strong> —
+            A researcher developing robust, scalable, and
+            efficient AI-driven approaches to cybersecurity,
+            with a focus on generative learning and
+            network intrusion detection.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button primary" href="#research">
+              Explore my research
+              <span aria-hidden="true">↗</span>
+            </a>
+
+            <a class="button secondary" href="#publications">
+              View publications
+              <span aria-hidden="true">→</span>
+            </a>
+          </div>
+
+          <div class="hero-foot">
+            <span class="pulse"></span>
+            Open to research collaboration
+            <span class="foot-separator">/</span>
+            Montréal, Canada
+          </div>
+
         </div>
-        <div class="hero-art reveal" aria-label="Abstract visualization of connected research nodes">
+
+        <div class="hero-art reveal">
           <div class="hero-profile">
             <img
               src="assets/pic.jpg"
               alt="Dr. Ishfaq Bashir Sofi"
               class="hero-profile-photo"
-              />
+            />
           </div>
+        </div>
+      </div>
     </section>
-    <section class="section about" id="about"><div class="shell two-col"><div class="section-side reveal"><span class="section-index">01 — ABOUT</span><h2>Research with<br /><em>Real-World</em> Impact.</h2></div><div class="section-main reveal"><p class="intro">My work sits at the intersection of artificial intelligence, network security, and efficient machine learning.</p><p>I earned my PhD in Electrical and Computer Engineering at <strong>Concordia University, Montréal</strong>. My doctoral research explored generative adversarial networks for robust and scalable intrusion detection systems, addressing challenges such as rare cyberattacks, imbalanced datasets, and computational constraints.</p><p>I am particularly interested in translating rigorous AI research into security solutions that are reliable, reproducible, and practical to deploy.</p><div class="inline-meta"><div><small>EDUCATION</small><strong>PhD · Electrical & Computer Engineering</strong><span>Concordia University, Canada</span></div><div><small>FOCUS</small><strong>AI-Driven Cybersecurity</strong><span>Generative AI · Intrusion Detection · Efficient ML</span></div></div></div></div></section>
-    <section class="section research-section" id="research"><div class="shell"><div class="section-heading reveal"><div><span class="section-index">02 — RESEARCH</span><h2>Research <em>Directions.</em></h2></div><p>Advancing intelligent defense through generative modeling, robust learning, and efficient architectures.</p></div><div class="research-grid"><article class="research-card reveal"><span class="card-number">01 /</span><div class="card-icon">◎</div><h3>Generative AI for Cybersecurity</h3><p>Generative adversarial networks and synthetic data approaches for improving the detection of rare and underrepresented cyberattacks.</p><div class="tag-row"><span>GANs</span><span>Data Augmentation</span><span>Rare Attacks</span></div></article><article class="research-card reveal"><span class="card-number">02 /</span><div class="card-icon">⌘</div><h3>Intelligent Intrusion Detection</h3><p>Robust machine learning systems for identifying malicious network behavior under class imbalance and changing threat conditions.</p><div class="tag-row"><span>Network Security</span><span>IDS</span><span>Imbalance</span></div></article><article class="research-card reveal"><span class="card-number">03 /</span><div class="card-icon">◇</div><h3>Efficient & Deployable AI</h3><p>Lightweight neural architectures, knowledge distillation, and efficient inference for resource-constrained security environments.</p><div class="tag-row"><span>Transformers</span><span>Edge AI</span><span>Efficiency</span></div></article></div></div></section>
-    
-<section class="section" id="education"><div class="shell"><div class="section-heading"><div><span class="section-index">EDUCATION</span><h2>Academic <em>Qualifications.</em></h2></div></div><div class="detail-grid">
-<article class="detail-card"><span>2022—2026 · CANADA</span><h3>PhD, Electrical & Computer Engineering</h3><p>Concordia University, Montréal</p><p>Generative AI, cybersecurity, class-imbalanced learning, rare-attack detection, and efficient intrusion detection.</p></article>
-<article class="detail-card"><span>2016—2018 · INDIA</span><h3>M.Tech, Electronics & Communication Engineering</h3><p>Lovely Professional University, Punjab</p><p>Research in energy-efficient Massive MIMO and 5G networks.</p></article>
-<article class="detail-card"><span>2013—2015 · INDIA</span><h3>MSc, Electronics & IT</h3><p>University of Kashmir, Srinagar</p><p>Electronics, instrumentation, and information technologies.</p></article></div></div></section>
-<section class="section research-section" id="projects"><div class="shell"><div class="section-heading"><div><span class="section-index">RESEARCH PROJECTS</span><h2>Projects & <em>Research Themes.</em></h2></div></div><div class="detail-grid">
-<article class="detail-card"><span>CYBERSECURITY · GENERATIVE AI</span><h3>Generative Adversarial Networks for Robust and Scalable Intrusion Detection Systems</h3><p>Class-aware GAN augmentation, WGAN-GP, autoencoders, rare-attack recognition, imbalanced network traffic, and lightweight IDS.</p></article>
-<article class="detail-card"><span>WIRELESS · 5G</span><h3>Energy Efficiency Optimization of Massive MIMO Networks</h3><p>Energy-efficient 5G networks, capacity, throughput, latency, and quality-of-service trade-offs in large antenna systems.</p></article>
-<article class="detail-card"><span>RESEARCH INTERESTS</span><h3>Intelligent and Trustworthy Network Security</h3><p>Explainable AI, IoT security, knowledge distillation, edge AI, and secure communications.</p></article></div></div></section>
-<section class="section" id="research-experience"><div class="shell"><div class="section-heading"><div><span class="section-index">APPOINTMENTS</span><h2>Research <em>Experience.</em></h2></div></div><div class="detail-grid">
-<article class="detail-card"><span>2026—PRESENT</span><h3>Associate Researcher</h3><p>Concordia University, Canada</p><p>Research on generative AI and adaptive, efficient, trustworthy intrusion detection systems. Position wording is reproduced from the Strikingly profile.</p></article>
-<article class="detail-card"><span>2022—2026</span><h3>Research Assistant</h3><p>Concordia University, Canada</p><p>Doctoral research on class imbalance, minority attacks, data scarcity, and lightweight AI-based cybersecurity.</p></article>
-<article class="detail-card"><span>2020—2021</span><h3>Junior Research Fellow</h3><p>University of Kashmir, India</p><p>DST-funded work on energy-efficient millimeter-wave antennas for 5G and IoT applications.</p></article></div></div></section>
-<section class="section" id="gallery"><div class="shell"><div class="section-heading"><div><span class="section-index">MEDIA</span><h2>Academic <em>Gallery.</em></h2></div></div><p>Photos and videos remain accessible on the original Strikingly website <code>assets/gallery/</code> when available.</p><p><a class="external-link" href="https://ishfaq-bashir-phd.mystrikingly.com/" target="_blank" rel="noopener noreferrer">View original gallery ↗</a></p></div></section>
-<section class="section publications" id="publications"><div class="shell"><div class="section-heading reveal"><div><span class="section-index">03 — SELECTED WORK</span><h2>Research <em>Publications.</em></h2></div><p></p></div><div class="publication-tools"><input id="publication-search" type="search" placeholder="Search publications, venues, authors…" aria-label="Search publications"/><select id="publication-filter" aria-label="Filter publications"><option value="all">All publications</option><option value="journal">Journals & chapters</option><option value="conference">Conferences</option><option value="thesis">Theses</option></select><span id="publication-count" aria-live="polite"></span></div><div class="publication-list" id="publication-list"></div><p class="publication-note">Publication metadata and links can be updated in <code>assets/main.js</code>. Bibliographic details were transcribed from the original site; independently verify metadata and statuses before final publication.</p></div></section>
-    <section class="section experience-section" id="experience"><div class="shell two-col"><div class="section-side reveal"><span class="section-index">04 — ACADEMIC PATH</span><h2>Experience &<br /><em>Education.</em></h2></div><div class="timeline reveal"><div class="timeline-item"><span class="timeline-date">2026</span><div><h3>PhD, Electrical & Computer Engineering</h3><p>Concordia University · Montréal, Canada</p><small>Doctoral research: Generative Adversarial Networks for Robust and Scalable Intrusion Detection Systems</small></div></div><div class="timeline-item"><span class="timeline-date">RESEARCH</span><div><h3>AI & Cybersecurity Research</h3><p>Generative models · intrusion detection · efficient deep learning</p><small>Research spanning rare-attack detection, class imbalance mitigation, and scalable intelligent security architectures.</small></div></div><div class="timeline-item"><span class="timeline-date">TEACHING</span><div><h3>Teaching & Student Supervision</h3><p>University of Kashmir</p><small>Academic teaching experience and M.Tech student supervision. Add course titles and appointment dates after verification.</small></div></div></div></div></section>
-    <section class="section recognition-section" id="recognition"><div class="shell"><div class="section-heading reveal"><div><span class="section-index">05 — RECOGNITION</span><h2>Honors & <em>Awards.</em></h2></div></div><div class="award-grid reveal"><div><span>01</span><h3>IEEE GLOBECOM Travel Grant</h3><p>IEEE Communications Society · 2025</p></div><div><span>02</span><h3>Concordia Graduate Doctoral Fellowship</h3><p>Concordia University</p></div><div><span>03</span><h3>International Tuition Award for Excellence</h3><p>Concordia University</p></div><div><span>04</span><h3>Junior Research Fellowship</h3><p>Department of Science & Technology, Government of India</p></div><div><span>05</span><h3>Concordia University Research Assistantship</h3><p>Concordia University</p></div></div></div></section>
-    <section class="contact-section" id="contact"><div class="shell contact-layout"><div class="reveal"><span class="section-index">06 — CONNECT</span><h2>Let's build<br /><em>what's next.</em></h2><p>Interested in research collaboration, academic opportunities, or discussing AI and cybersecurity? I'd be glad to connect.</p><a class="button primary contact-button" id="email-link" href="#contact">Get in touch <span aria-hidden="true">↗</span></a><div class="contact-links" id="contact-links"></div></div><div class="contact-graphic" aria-hidden="true">IS<span>.</span></div></div></section>
-     
-<section id="gallery" class="section">
-  <div class="shell">
-    <div class="section-heading">
-      <p class="eyebrow">ACADEMIC MOMENTS</p>
-      <h2>Research Gallery</h2>
-      <p>Conferences, research activities, academic achievements, and collaborations.</p>
-    </div>
 
-    <div class="research-gallery">
-      <figure>
-        <img src="assets/gallery/conference2025.webp" alt="Academic conference" loading="lazy">
-        <figcaption>Academic Conference</figcaption>
-      </figure>
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+      <div class="shell two-col">
 
-      <figure>
-        <img src="assets/gallery/graduation.webp" alt="Graduation" loading="lazy">
-        <figcaption>Academic Milestone</figcaption>
-      </figure>
+        <div class="section-side reveal">
+          <span class="section-index">01 — ABOUT</span>
+          <h2>
+            Research with<br />
+            <em>Real-World</em> Impact.
+          </h2>
+        </div>
 
-      <figure>
-        <img src="assets/gallery/research-event.webp" alt="Research event" loading="lazy">
-        <figcaption>Research Activities</figcaption>
-      </figure>
-    </div>
-  </div>
-</section>
-     
+        <div class="section-main reveal">
+          <p class="intro">
+            My work sits at the intersection of artificial
+            intelligence, network security, and efficient
+            machine learning.
+          </p>
+
+          <p>
+            I earned my PhD in Electrical and Computer
+            Engineering at <strong>Concordia University,
+            Montréal</strong>. My doctoral research explored
+            generative adversarial networks for robust and
+            scalable intrusion detection systems, addressing
+            challenges such as rare cyberattacks, imbalanced
+            datasets, and computational constraints.
+          </p>
+
+          <p>
+            I am particularly interested in translating
+            rigorous AI research into security solutions
+            that are reliable, reproducible, and practical
+            to deploy.
+          </p>
+
+          <div class="inline-meta">
+            <div>
+              <small>EDUCATION</small>
+              <strong>PhD · Electrical & Computer Engineering</strong>
+              <span>Concordia University, Canada</span>
+            </div>
+
+            <div>
+              <small>FOCUS</small>
+              <strong>AI-Driven Cybersecurity</strong>
+              <span>
+                Generative AI · Intrusion Detection · Efficient ML
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- RESEARCH -->
+    <section class="section research-section" id="research">
+      <div class="shell">
+
+        <div class="section-heading reveal">
+          <div>
+            <span class="section-index">02 — RESEARCH</span>
+            <h2>Research <em>Directions.</em></h2>
+          </div>
+
+          <p>
+            Advancing intelligent defense through generative
+            modeling, robust learning, and efficient architectures.
+          </p>
+        </div>
+
+        <div class="research-grid">
+
+          <article class="research-card reveal">
+            <span class="card-number">01 /</span>
+            <div class="card-icon">◎</div>
+            <h3>Generative AI for Cybersecurity</h3>
+            <p>
+              Generative adversarial networks and synthetic
+              data approaches for improving the detection
+              of rare and underrepresented cyberattacks.
+            </p>
+            <div class="tag-row">
+              <span>GANs</span>
+              <span>Data Augmentation</span>
+              <span>Rare Attacks</span>
+            </div>
+          </article>
+
+          <article class="research-card reveal">
+            <span class="card-number">02 /</span>
+            <div class="card-icon">⌘</div>
+            <h3>Intelligent Intrusion Detection</h3>
+            <p>
+              Robust machine learning systems for identifying
+              malicious network behavior under class imbalance
+              and changing threat conditions.
+            </p>
+            <div class="tag-row">
+              <span>Network Security</span>
+              <span>IDS</span>
+              <span>Imbalance</span>
+            </div>
+          </article>
+
+          <article class="research-card reveal">
+            <span class="card-number">03 /</span>
+            <div class="card-icon">◇</div>
+            <h3>Efficient & Deployable AI</h3>
+            <p>
+              Lightweight neural architectures, knowledge
+              distillation, and efficient inference for
+              resource-constrained security environments.
+            </p>
+            <div class="tag-row">
+              <span>Transformers</span>
+              <span>Edge AI</span>
+              <span>Efficiency</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section" id="education">
+      <div class="shell">
+
+        <div class="section-heading">
+          <div>
+            <span class="section-index">EDUCATION</span>
+            <h2>Academic <em>Qualifications.</em></h2>
+          </div>
+        </div>
+
+        <div class="detail-grid">
+
+          <article class="detail-card">
+            <span>2022—2026 · CANADA</span>
+            <h3>PhD, Electrical & Computer Engineering</h3>
+            <p>Concordia University, Montréal</p>
+            <p>
+              Generative AI, cybersecurity, class-imbalanced
+              learning, rare-attack detection, and efficient
+              intrusion detection.
+            </p>
+          </article>
+
+          <article class="detail-card">
+            <span>2016—2018 · INDIA</span>
+            <h3>M.Tech, Electronics & Communication Engineering</h3>
+            <p>Lovely Professional University, Punjab</p>
+            <p>
+              Research in energy-efficient Massive MIMO
+              and 5G networks.
+            </p>
+          </article>
+
+          <article class="detail-card">
+            <span>2013—2015 · INDIA</span>
+            <h3>MSc, Electronics & IT</h3>
+            <p>University of Kashmir, Srinagar</p>
+            <p>
+              Electronics, instrumentation, and
+              information technologies.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section research-section" id="projects">
+      <div class="shell">
+
+        <div class="section-heading">
+          <div>
+            <span class="section-index">RESEARCH PROJECTS</span>
+            <h2>Projects & <em>Research Themes.</em></h2>
+          </div>
+        </div>
+
+        <div class="detail-grid">
+
+          <article class="detail-card">
+            <span>CYBERSECURITY · GENERATIVE AI</span>
+            <h3>
+              Generative Adversarial Networks for Robust
+              and Scalable Intrusion Detection Systems
+            </h3>
+            <p>
+              Class-aware GAN augmentation, WGAN-GP,
+              autoencoders, rare-attack recognition,
+              imbalanced network traffic, and lightweight IDS.
+            </p>
+          </article>
+
+          <article class="detail-card">
+            <span>WIRELESS · 5G</span>
+            <h3>
+              Energy Efficiency Optimization of
+              Massive MIMO Networks
+            </h3>
+            <p>
+              Energy-efficient 5G networks, capacity,
+              throughput, latency, and quality-of-service
+              trade-offs in large antenna systems.
+            </p>
+          </article>
+
+          <article class="detail-card">
+            <span>RESEARCH INTERESTS</span>
+            <h3>Intelligent and Trustworthy Network Security</h3>
+            <p>
+              Explainable AI, IoT security, knowledge
+              distillation, edge AI, and secure communications.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- RESEARCH EXPERIENCE -->
+    <section class="section" id="research-experience">
+      <div class="shell">
+
+        <div class="section-heading">
+          <div>
+            <span class="section-index">APPOINTMENTS</span>
+            <h2>Research <em>Experience.</em></h2>
+          </div>
+        </div>
+
+        <div class="detail-grid">
+
+          <article class="detail-card">
+            <span>2026—PRESENT</span>
+            <h3>Associate Researcher</h3>
+            <p>Concordia University, Canada</p>
+            <p>
+              Research on generative AI and adaptive,
+              efficient, trustworthy intrusion detection
+              systems. Position wording is reproduced
+              from the Strikingly profile.
+            </p>
+          </article>
+
+          <article class="detail-card">
+            <span>2022—2026</span>
+            <h3>Research Assistant</h3>
+            <p>Concordia University, Canada</p>
+            <p>
+              Doctoral research on class imbalance,
+              minority attacks, data scarcity, and
+              lightweight AI-based cybersecurity.
+            </p>
+          </article>
+
+          <article class="detail-card">
+            <span>2020—2021</span>
+            <h3>Junior Research Fellow</h3>
+            <p>University of Kashmir, India</p>
+            <p>
+              DST-funded work on energy-efficient
+              millimeter-wave antennas for 5G and
+              IoT applications.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PUBLICATIONS -->
+    <section class="section publications" id="publications">
+      <div class="shell">
+
+        <div class="section-heading reveal">
+          <div>
+            <span class="section-index">03 — SELECTED WORK</span>
+            <h2>Research <em>Publications.</em></h2>
+          </div>
+          <p></p>
+        </div>
+
+        <div class="publication-tools">
+          <input
+            id="publication-search"
+            type="search"
+            placeholder="Search publications, venues, authors…"
+            aria-label="Search publications"
+          />
+
+          <select id="publication-filter"
+                  aria-label="Filter publications">
+            <option value="all">All publications</option>
+            <option value="journal">Journals & chapters</option>
+            <option value="conference">Conferences</option>
+            <option value="thesis">Theses</option>
+          </select>
+
+          <span id="publication-count" aria-live="polite"></span>
+        </div>
+
+        <div class="publication-list" id="publication-list"></div>
+
+        <p class="publication-note">
+          Publication metadata and links can be updated in
+          <code>assets/main.js</code>.
+          Bibliographic details were transcribed from the
+          original site; independently verify metadata
+          and statuses before final publication.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- PHOTO GALLERY -->
+    <section class="section" id="gallery">
+      <div class="shell">
+
+        <div class="section-heading">
+          <div>
+            <span class="section-index">
+              RESEARCH & ACADEMIC LIFE
+            </span>
+            <h2>Research <em>Gallery.</em></h2>
+          </div>
+
+          <p>
+            Moments from conferences, research activities,
+            academic achievements, and collaborations.
+          </p>
+        </div>
+
+        <div class="research-gallery">
+
+          <figure>
+            <a href="assets/gallery/1.webp"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="View gallery photo 1">
+              <img
+                src="assets/gallery/1.webp"
+                alt="Academic gallery photograph 1"
+                loading="lazy"
+              />
+            </a>
+            <figcaption>Academic Gallery · 01</figcaption>
+          </figure>
+
+          <figure>
+            <a href="assets/gallery/2.webp"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="View gallery photo 2">
+              <img
+                src="assets/gallery/2.webp"
+                alt="Academic gallery photograph 2"
+                loading="lazy"
+              />
+            </a>
+            <figcaption>Academic Gallery · 02</figcaption>
+          </figure>
+
+          <figure>
+            <a href="assets/gallery/3.webp"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="View gallery photo 3">
+              <img
+                src="assets/gallery/3.webp"
+                alt="Academic gallery photograph 3"
+                loading="lazy"
+              />
+            </a>
+            <figcaption>Academic Gallery · 03</figcaption>
+          </figure>
+
+          <figure>
+            <a href="assets/gallery/4.webp"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="View gallery photo 4">
+              <img
+                src="assets/gallery/4.webp"
+                alt="Academic gallery photograph 4"
+                loading="lazy"
+              />
+            </a>
+            <figcaption>Academic Gallery · 04</figcaption>
+          </figure>
+
+          <figure>
+            <a href="assets/gallery/5.webp"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="View gallery photo 5">
+              <img
+                src="assets/gallery/5.webp"
+                alt="Academic gallery photograph 5"
+                loading="lazy"
+              />
+            </a>
+            <figcaption>Academic Gallery · 05</figcaption>
+          </figure>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section experience-section" id="experience">
+      <div class="shell two-col">
+
+        <div class="section-side reveal">
+          <span class="section-index">04 — ACADEMIC PATH</span>
+          <h2>
+            Experience &<br />
+            <em>Education.</em>
+          </h2>
+        </div>
+
+        <div class="timeline reveal">
+
+          <div class="timeline-item">
+            <span class="timeline-date">2026</span>
+            <div>
+              <h3>PhD, Electrical & Computer Engineering</h3>
+              <p>Concordia University · Montréal, Canada</p>
+              <small>
+                Doctoral research: Generative Adversarial
+                Networks for Robust and Scalable Intrusion
+                Detection Systems
+              </small>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="timeline-date">RESEARCH</span>
+            <div>
+              <h3>AI & Cybersecurity Research</h3>
+              <p>
+                Generative models · intrusion detection ·
+                efficient deep learning
+              </p>
+              <small>
+                Research spanning rare-attack detection,
+                class imbalance mitigation, and scalable
+                intelligent security architectures.
+              </small>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="timeline-date">TEACHING</span>
+            <div>
+              <h3>Teaching & Student Supervision</h3>
+              <p>University of Kashmir</p>
+              <small>
+                Academic teaching experience and M.Tech
+                student supervision. Add course titles
+                and appointment dates after verification.
+              </small>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- RECOGNITION -->
+    <section class="section recognition-section" id="recognition">
+      <div class="shell">
+
+        <div class="section-heading reveal">
+          <div>
+            <span class="section-index">05 — RECOGNITION</span>
+            <h2>Honors & <em>Awards.</em></h2>
+          </div>
+        </div>
+
+        <div class="award-grid reveal">
+
+          <div>
+            <span>01</span>
+            <h3>IEEE GLOBECOM Travel Grant</h3>
+            <p>IEEE Communications Society · 2025</p>
+          </div>
+
+          <div>
+            <span>02</span>
+            <h3>Concordia Graduate Doctoral Fellowship</h3>
+            <p>Concordia University</p>
+          </div>
+
+          <div>
+            <span>03</span>
+            <h3>International Tuition Award for Excellence</h3>
+            <p>Concordia University</p>
+          </div>
+
+          <div>
+            <span>04</span>
+            <h3>Junior Research Fellowship</h3>
+            <p>
+              Department of Science & Technology,
+              Government of India
+            </p>
+          </div>
+
+          <div>
+            <span>05</span>
+            <h3>Concordia University Research Assistantship</h3>
+            <p>Concordia University</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact-section" id="contact">
+      <div class="shell contact-layout">
+
+        <div class="reveal">
+          <span class="section-index">06 — CONNECT</span>
+
+          <h2>
+            Let's build<br />
+            <em>what's next.</em>
+          </h2>
+
+          <p>
+            Interested in research collaboration, academic
+            opportunities, or discussing AI and cybersecurity?
+            I'd be glad to connect.
+          </p>
+
+          <a class="button primary contact-button"
+             id="email-link"
+             href="#contact">
+            Get in touch
+            <span aria-hidden="true">↗</span>
+          </a>
+
+          <div class="contact-links" id="contact-links"></div>
+        </div>
+
+        <div class="contact-graphic" aria-hidden="true">
+          IS<span>.</span>
+        </div>
+
+      </div>
+    </section>
+
   </main>
-  <footer class="footer"><div class="shell footer-inner"><span>© <span id="year"></span> Ishfaq Bashir Sofi. All rights reserved.</span><span>DESIGNED FOR RESEARCH & DISCOVERY <a href="#top">BACK TO TOP ↑</a></span></div></footer>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="shell footer-inner">
+      <span>
+        © <span id="year"></span> Ishfaq Bashir Sofi.
+        All rights reserved.
+      </span>
+
+      <span>
+        DESIGNED FOR RESEARCH & DISCOVERY
+        <a href="#top">BACK TO TOP ↑</a>
+      </span>
+    </div>
+  </footer>
+
 </body>
 </html>
